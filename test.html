@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Example</title>
+</head>
+<body>
+    <div>
+        <button id="btn">Click me to open example.com</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Hello world");
+
+            const button = document.getElementById("btn");
+            button.addEventListener("click", () => {
+                const width = 1075;
+                const height = 885;
+                const left = (window.screen.width - width) / 2;
+                const top = (window.screen.height - height) / 2;
+
+                const windowFeatures = 
+                    "channelmode=no, directories=no, fullscreen=no, location=no, scrollbars=yes, " +
+                    "menubar=no, resizable=yes, status=no, titlebar=yes, toolbar=no, " +
+                    `top=${top}, left=${left}, height=${height}, width=${width}`;
+
+                window.open("https://www.example.com", "_blank", windowFeatures);
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Example</title>
+</head>
+<body>
+    <div>
+        <button id="btn">Click me to open example.com</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Hello world");
+
+            var button = document.getElementById("btn");
+            button.addEventListener("click", function () {
+                var width = 1075;
+                var height = 885;
+                var left = (window.screen.width - width) / 2;
+                var top = (window.screen.height - height) / 2;
+
+                var windowFeatures = 
+                    "channelmode=no, directories=no, fullscreen=no, location=no, scrollbars=yes, " +
+                    "menubar=no, resizable=yes, status=no, titlebar=yes, toolbar=no, " +
+                    "top=" + top + ", left=" + left + ", height=" + height + ", width=" + width;
+
+                window.open("https://www.example.com", "_blank", windowFeatures);
+            });
+        });
+    </script>
+</body>
+</html>
